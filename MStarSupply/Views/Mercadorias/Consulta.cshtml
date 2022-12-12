@@ -1,0 +1,47 @@
+﻿@model List<MStarSupply.Models.MercadoriasConsultaModel>
+
+@{
+    ViewData["Title"] = "Consulta";
+    Layout = "~/Views/Shared/_MercadoriasLayout.cshtml";
+}
+
+<h5>Consulta de mercadorias</h5>
+<p>Listagem de mercadorias cadastradas</p>
+<hr />
+
+<table id="tabela" class="table table-sm table-hover">
+    <thead>
+        <tr>
+            <th>Mercadoria</th>
+            <th>Número de registro</th>
+            <th>Fabricante</th>
+            <th>Tipo de mercadoria</th>
+            <th>Descrição da mercadoria</th>
+            <th>Data de cadastro</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+             <tr>
+                 <td>@item.NomeMercadoria</td>
+                 <td>@item.NumeroRegistro</td>
+                 <td>@item.Fabricante</td>
+                 <td>@item.TipoMercadoria</td>
+                 <td>@item.Descricao</td>
+                 <td>@item.DataCadastro</td>
+                 <td>
+                     <a href="/Mercadorias/Edicao/@item.IdMercadoria" class="btn btn-sm btn-primary">
+                         Editar
+                     </a>
+                         <a href="/Mercadorias/Exclusao/@item.IdMercadoria" onclick="return confirm('Deseja excluir o contato @item.NomeMercadoria?');"
+             class="btn btn-sm btn-danger">
+                         Excluir
+                     </a>
+                 </td>
+             </tr>
+        }
+
+    </tbody>
+</table>

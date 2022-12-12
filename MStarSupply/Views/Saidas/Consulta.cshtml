@@ -1,0 +1,81 @@
+﻿@model MStarSupply.Models.SaidaConsultaModel
+@{
+    ViewData["Title"] = "Consulta";
+    Layout = "~/Views/Shared/_MercadoriasLayout.cshtml";
+}
+
+<h5>Consulta de saída de mercadorias</h5>
+<p>Listagem de saída de mercadorias</p>
+<hr />
+
+@using (Html.BeginForm())
+{
+            <div class="row mb-3">
+                 <div class="col-md-3">
+                    <label>Data de início:</label>
+            @Html.TextBoxFor(model => model.DataInicio,new {@class = "form-control",@type = "date"})
+                    <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataInicio)
+                    </span>
+                 </div>
+                <div class="col-md-3">
+                    <label>Data de término:</label>
+            @Html.TextBoxFor(model => model.DataFim,new {@class = "form-control",@type = "date"})
+                    <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataFim)
+                    </span>
+                </div>
+                <div class="col-md-6">
+                    <label>Formato:</label>
+                    <div>
+                @Html.RadioButtonFor(model => model.Formato, "Excel") <span>Planilha Excel</span>
+                        &nbsp;&nbsp;&nbsp;
+                @Html.RadioButtonFor(model => model.Formato, "Pdf") <span>Documento Pdf</span>
+                    </div>
+                    <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Formato)
+                    </span>
+                 </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <input type="submit" value="Executar Pesquisa"class="btn btn-primary"/>
+                </div>
+            </div>
+}
+
+@if (Model != null && Model.Saidas != null)
+{
+            <table class="table table-hover table-sm">
+                <thead>
+                    <tr>
+                        <th>ID Entrada</th>
+                        <th>ID Mercadoria</th>
+                        <th>Nome Mercadoria</th>
+                        <th>Data de Entrada</th>
+                        <th>Data de Saída</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+            @foreach (var item in Model.Saidas)
+            {
+                                <tr>
+                                    <td>@item.IdEntradaSaida</td>
+                                    <td>@item.IdMercadoria</td>
+                                    <td>@item.NomeMercadoria</td>
+                                    <td>@item.DataEntrada.ToString("dd/MM/yyyy")</td>
+                                    <td>@item.DataSaida.ToString("dd/MM/yyyy")</td>
+                                </tr>
+            }
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            Quantidade de Entradas: @Model.Saidas.Count()
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+}

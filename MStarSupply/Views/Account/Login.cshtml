@@ -1,0 +1,45 @@
+﻿@model MStarSupply.Models.AccountLoginModel
+
+@{
+    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+}
+
+<div class="card-body">
+
+    <div class="text-center mb-3">
+        <h5>Acesso ao Sistema</h5>
+        <p>Entre com suas credenciais para acessar o sistema.</p>
+
+    </div>
+
+    @using (Html.BeginForm())
+    {
+
+                <div class="mb-3">
+                    <label>Entre com seu e-mail de acesso:</label>
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                    <div class="text-danger">
+                @Html.ValidationMessageFor(model => model.Email)
+                    </div>
+
+                </div>
+
+                <div class="mb-3">
+                    <label>Entre com sua senha de acesso:</label>
+            @Html.PasswordFor(model => model.Senha, new { @class = "form-control" })
+                    <div class="text-danger">
+                @Html.ValidationMessageFor(model => model.Senha)
+                    </div>
+                </div>
+
+                <div class="mb-3 d-grid">
+                    <input type="submit" class="btn btn-success" value="Acessar sistema" />
+                </div>
+
+                <div class="text-center text-danger">
+                    <strong>@TempData["Mensagem"]</strong>
+                </div>
+
+    }
+
+</div>

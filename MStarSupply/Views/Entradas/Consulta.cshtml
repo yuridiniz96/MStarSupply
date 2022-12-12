@@ -1,0 +1,88 @@
+﻿@model  MStarSupply.Models.EntradaConsultaModel
+@{
+    ViewData["Title"] = "Consulta";
+    Layout = "~/Views/Shared/_MercadoriasLayout.cshtml";
+}
+
+<h5>Consulta de entrada de mercadorias</h5>
+<p>Listagem de entrada de mercadorias</p>
+<hr />
+
+@using (Html.BeginForm())
+{
+        <div class="row mb-3">
+             <div class="col-md-3">
+                <label>Data de início:</label>
+                @Html.TextBoxFor(model => model.DataInicio,new {@class = "form-control",@type = "date"})
+                <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataInicio)
+                </span>
+             </div>
+            <div class="col-md-3">
+                <label>Data de término:</label>
+                @Html.TextBoxFor(model => model.DataFim,new {@class = "form-control",@type = "date"})
+                <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataFim)
+                </span>
+            </div>
+
+
+            <div class="col-md-6">
+                <label>Extrair Consulta em:</label>
+                <div>
+                @Html.RadioButtonFor(model => model.Formato, "Excel") <span>Planilha Excel</span> 
+                    &nbsp;&nbsp;&nbsp;
+                @Html.RadioButtonFor(model => model.Formato, "Pdf") <span>Documento PDF</span>
+                </div>
+                <span class="text-danger">
+                @Html.ValidationMessageFor(model => model.Formato)
+                </span>
+             </div>
+
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <input type="submit" value="Executar Pesquisa"class="btn btn-primary"/>
+            </div>
+        </div>
+}
+
+@if (Model != null && Model.Entradas != null)
+{
+        <table class="table table-hover table-sm">
+            <thead>
+                <tr>
+                    <th>ID Entrada</th>
+                    <th>ID Mercadoria</th>
+                    <th>Nome Mercadoria</th>
+                    <th>Data de Entrada</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            @foreach (var item in Model.Entradas)
+            {
+                        <tr>
+                            <td>@item.IdEntradaSaida</td>
+                            <td>@item.IdMercadoria</td>
+                            <td>@item.NomeMercadoria</td>
+                            <td>@item.DataEntrada.ToString("dd/MM/yyyy")</td>
+                            <td>
+                               <a href="/Entradas/Edicao/@item.IdEntradaSaida"class="btn btn-danger btn-sm"
+                        onclick="return confirm('Deseja realmente realizar saída?');">
+                                Saída
+                               </a>
+                            </td>
+                        </tr>
+            }
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        Quantidade de Entradas: @Model.Entradas.Count()
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+}

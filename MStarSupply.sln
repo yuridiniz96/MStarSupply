@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MStarSupply", "MStarSupply\MStarSupply.csproj", "{0611BE64-90B6-4318-97F1-6ECAC015B0FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1857F940-4890-4182-9210-A53BC0AD82BA} = {1857F940-4890-4182-9210-A53BC0AD82BA}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation Layer", "1 - Presentation Layer", "{E160167E-C427-46F7-AB08-996BAF86DCB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Data Layer", "2 - Data Layer", "{248AC883-2FCA-4434-A7E4-D00EB153C3B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MStarSupply.Data", "MStarSupply.Data\MStarSupply.Data.csproj", "{1857F940-4890-4182-9210-A53BC0AD82BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0611BE64-90B6-4318-97F1-6ECAC015B0FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0611BE64-90B6-4318-97F1-6ECAC015B0FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0611BE64-90B6-4318-97F1-6ECAC015B0FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0611BE64-90B6-4318-97F1-6ECAC015B0FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1857F940-4890-4182-9210-A53BC0AD82BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1857F940-4890-4182-9210-A53BC0AD82BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1857F940-4890-4182-9210-A53BC0AD82BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1857F940-4890-4182-9210-A53BC0AD82BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0611BE64-90B6-4318-97F1-6ECAC015B0FE} = {E160167E-C427-46F7-AB08-996BAF86DCB9}
+		{1857F940-4890-4182-9210-A53BC0AD82BA} = {248AC883-2FCA-4434-A7E4-D00EB153C3B6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4083FA5-3444-4B05-988E-FABA410829C3}
+	EndGlobalSection
+EndGlobal

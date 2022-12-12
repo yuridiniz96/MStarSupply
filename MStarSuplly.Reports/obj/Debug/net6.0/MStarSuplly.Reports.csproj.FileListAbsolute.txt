@@ -1,0 +1,30 @@
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\bin\Debug\net6.0\MStarSuplly.Reports.deps.json
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\bin\Debug\net6.0\MStarSuplly.Reports.dll
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\bin\Debug\net6.0\MStarSuplly.Reports.pdb
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\bin\Debug\net6.0\MStarSupply.Data.dll
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\bin\Debug\net6.0\MStarSupply.Data.pdb
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.csproj.AssemblyReference.cache
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.AssemblyInfoInputs.cache
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.AssemblyInfo.cs
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.csproj.CoreCompileInputs.cache
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.csproj.CopyComplete
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.dll
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\refint\MStarSuplly.Reports.dll
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.pdb
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\ref\MStarSuplly.Reports.dll
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\bin\Debug\net6.0\MStarSuplly.Reports.deps.json
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\bin\Debug\net6.0\MStarSuplly.Reports.dll
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\bin\Debug\net6.0\MStarSuplly.Reports.pdb
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\bin\Debug\net6.0\MStarSupply.Data.dll
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\bin\Debug\net6.0\MStarSupply.Data.pdb
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.csproj.AssemblyReference.cache
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.AssemblyInfoInputs.cache
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.AssemblyInfo.cs
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.csproj.CoreCompileInputs.cache
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.csproj.CopyComplete
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.dll
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\refint\MStarSuplly.Reports.dll
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\MStarSuplly.Reports.pdb
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSuplly.Reports\obj\Debug\net6.0\ref\MStarSuplly.Reports.dll

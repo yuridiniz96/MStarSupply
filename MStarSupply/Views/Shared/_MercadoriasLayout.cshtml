@@ -1,0 +1,89 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>MStarSupply Supply Chain</title>
+
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/jquery.dataTables.min.css" />
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="/Dashboard/Dashboard">Sistema de Controle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gerenciar Mercadorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Mercadorias/Cadastro">Cadastrar Mercadoria</a></li>
+                            <li><a class="dropdown-item" href="/Mercadorias/Consulta">Consultar Mercadoria</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gerenciar Entradas de Mercadoria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Entradas/Cadastro">Cadastrar Entrada de Mercadoria</a></li>
+                            <li><a class="dropdown-item" href="/Entradas/Consulta">Consultar Entrada de Mercadoria</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Gerenciar Saídas de Mercadoria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Saidas/Consulta">Consultar Saídas de Mercadoria</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    
+                    <a href="/Account/Login" onclick="return confirm('Deseja realmente sair do sistema?');" class="btn btn-outline-light pull-right btn-sm">
+                        Sair do sistema
+                    </a>
+                  
+                </form>
+            </div>
+        </div>
+   </nav>
+    @if (TempData["Mensagem"] != null)
+    {
+        <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+            <strong>@TempData["Mensagem"]</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="container mt-3">
+        @RenderBody()
+    </div>
+
+    <script src="~/js/bootstrap.bundle.js"></script>
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

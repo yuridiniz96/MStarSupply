@@ -1,0 +1,46 @@
+﻿@model MStarSupply.Models.EntradaCadastroModel
+@{
+    ViewData["Title"] = "Cadastrar";
+    Layout = "~/Views/Shared/_MercadoriasLayout.cshtml";
+}
+
+<h5>Cadastro de Entradas</h5>
+<p>Preencha os campos para incluir entrada de mercadorias no sistema.</p>
+<hr/>
+
+@using (Html.BeginForm())
+{
+       <div class="row mb-3">
+            <div class="col-md-8">
+                <label>Mercadorias:</label>
+                @Html.DropDownListFor(model => model.IdMercadoria, Model.listagemMercadorias, "Escolha uma opção", new { @class = "form-select" })
+                 <div class="text-danger">
+                     @Html.ValidationMessageFor(model => model.IdMercadoria)
+                 </div>
+            </div>
+
+            <div class="col-md-4">
+                <label>Data de entrada da mercadoria:</label>
+                     @Html.TextBoxFor(model => model.DataEntrada, new { @class = "form-control", @type = "date" })
+                <div class="text-danger">
+                     @Html.ValidationMessageFor(model => model.DataEntrada)
+                </div>
+            </div>
+
+           <div class="col-md-2">
+                <label>Quantidade:</label>
+                    @Html.TextBoxFor(model => model.Quantidade, new { @class = "form-control" })
+                <div class="text-danger">
+                    @Html.ValidationMessageFor(model => model.Quantidade)
+                </div>
+           </div>
+       </div>
+
+      <div class="row mb-3">
+           <div class="col-md-12">
+               <input type="submit" class="btn btn-success" value="Realizar Cadastro"/>
+           </div>
+      </div>
+
+}
+

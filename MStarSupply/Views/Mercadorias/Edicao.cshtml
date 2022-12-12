@@ -1,0 +1,80 @@
+﻿@model MStarSupply.Models.MercadoriasEdicaoModel
+@{
+    ViewData["Title"] = "Edicao";
+    Layout = "~/Views/Shared/_MercadoriasLayout.cshtml";
+}
+
+<h5>Edição de mercadoria</h5>
+<p>Utilize os campos para alterar a mercadoria</p>
+<hr/>
+
+@using (Html.BeginForm())
+{
+
+        <div>
+        @Html.HiddenFor(model => model.IdMercadoria)
+        </div>
+
+            <div class="row mb-3">
+
+                <div class="col-md-8">
+                    <label>Mercadoria:</label>
+            @Html.TextBoxFor(model => model.NomeMercadoria, new { @class = "form-control" })
+                    <div class="text-danger">
+                @Html.ValidationMessageFor(model => model.NomeMercadoria)
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mb-3">
+
+                <div class="col-md-4">
+                    <label>Número de registro:</label>
+            @Html.TextBoxFor(model => model.NumeroRegistro, new { @class = "form-control" })
+                    <div class="text-danger">
+                @Html.ValidationMessageFor(model => model.NumeroRegistro)
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                   <label>Fabricante:</label>
+            @Html.TextBoxFor(model => model.Fabricante, new { @class = "form-control" })
+                    <div class="text-danger">
+                @Html.ValidationMessageFor(model => model.Fabricante)
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                   <label>Tipo de mercadoria:</label>
+            @Html.TextBoxFor(model => model.TipoMercadoria, new { @class = "form-control" })
+                   <div class="text-danger">
+                @Html.ValidationMessageFor(model => model.TipoMercadoria)
+                   </div>
+                </div>
+
+                <div class="col-md-4">
+                   <label>Descrição da mercadoria:</label>
+            @Html.TextBoxFor(model => model.Descricao, new { @class = "form-control" })
+                    <div class="text-danger">
+                @Html.ValidationMessageFor(model => model.Descricao)
+                    </div>
+                </div>
+
+               <div class="col-md-4">
+                   <label>Data de Cadastro:</label>
+            @Html.TextBoxFor(model => model.DataCadastro, new { @class = "form-control", @type = "date" })
+                   <div class="text-danger">
+                @Html.ValidationMessageFor(model => model.DataCadastro)
+                   </div>
+               </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-12">
+
+                    <input type="submit" class="btn btn-success" value="Realizar Cadastro"/>
+
+                </div>
+            </div>
+}

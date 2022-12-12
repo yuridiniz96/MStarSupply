@@ -1,0 +1,24 @@
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\bin\Debug\net6.0\MStarSupply.Data.deps.json
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\bin\Debug\net6.0\MStarSupply.Data.dll
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\bin\Debug\net6.0\MStarSupply.Data.pdb
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.csproj.AssemblyReference.cache
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.AssemblyInfoInputs.cache
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.AssemblyInfo.cs
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.csproj.CoreCompileInputs.cache
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.dll
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\refint\MStarSupply.Data.dll
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.pdb
+C:\Users\yuria\Desktop\Curso .NET C#\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\ref\MStarSupply.Data.dll
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\bin\Debug\net6.0\MStarSupply.Data.deps.json
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\bin\Debug\net6.0\MStarSupply.Data.dll
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\bin\Debug\net6.0\MStarSupply.Data.pdb
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.csproj.AssemblyReference.cache
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.AssemblyInfoInputs.cache
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.AssemblyInfo.cs
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.csproj.CoreCompileInputs.cache
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.dll
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\refint\MStarSupply.Data.dll
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\MStarSupply.Data.pdb
+C:\Users\YuriDiniz\Desktop\MStarSupply\MStarSupply.Data\obj\Debug\net6.0\ref\MStarSupply.Data.dll
